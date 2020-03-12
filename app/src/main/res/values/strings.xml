@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">SpinnerInKotlin</string>
+    <string name="selected_item">Selected item:</string>
+
+    <string-array name="country">
+        <item>나라를 선택해 주세요</item>
+        <item>korea</item>
+        <item>china</item>
+        <item>japan</item>
+    </string-array>
+
+    <string-array name="city_no">
+        <item>도시를 선택해 주세요</item>
+    </string-array>
+
+    <string-array name="city_korea">
+        <item>seoul</item>
+        <item>incheon</item>
+        <item>Chungju</item>
+        <item>gunpo</item>
+
+    </string-array>
+
+
+    <string-array name="city_china">
+        <item>Beijing</item>
+        <item>Shanghai</item>
+        <item>tianjin</item>
+    </string-array>
+
+    <string-array name="city_japan">
+        <item>tokyo</item>
+        <item>kyoto</item>
+        <item>osaka</item>
+    </string-array>
+
+</resources>
