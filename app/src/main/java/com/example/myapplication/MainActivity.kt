@@ -130,7 +130,9 @@ class MainActivity : AppCompatActivity() {
          a = WeatherResult.substring(target_num, WeatherResult.substring(target_num).indexOf(",") + target_num)
         val result: String = a!!.replace("temp\":", "") //결과값의 온도값만 추출
 
-        val c =Integer.parseInt(result)
+       // val c =Integer.parseInt(result)
+        val c :Double = result.toDouble()
+
 
         var resultTem: String = ""
         if(c >=0){
@@ -175,7 +177,7 @@ class MainActivity : AppCompatActivity() {
                     val topimage = ImageView(this)
 
                     val topUrl : String? = weatherVO.top
-                    val pantsUrl : String? = ""
+                    val pantsUrl : String? = weatherVO.pants
                     println("pantsUrl@@@@@@@@@@@@@@@@@@@@@@@@"+pantsUrl)
                             Glide.with(this).load(topUrl).into(topimage)
                     top.addView(topimage)
